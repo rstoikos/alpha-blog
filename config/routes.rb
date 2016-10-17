@@ -8,6 +8,9 @@ Rails.application.routes.draw do
   get 'about', to: 'pages#about'
   get 'game', to: 'pages#game'
   resources :articles
+  
+  get 'signup', to: 'users#new'
+	resources :users, except: [:new]
 
 
   # Example of regular route:
