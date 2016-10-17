@@ -11,14 +11,14 @@
 					<label>Your Difficulty: </label>
 					<button ng-click="easy()" class="btn btn-primarybtn-sm">Easy</button>
 					<button ng-click="hard()" class="btn btn-warning btn-sm">Hard</button>
-				</p>
-				<label>Your Guess: </label><input type="number" ng-model="guess"/>
-				<button ng-click="verifyGuess()" class="btn btn-primarybtn-sm">Verify</button>
-				<button ng-click="initializeGame()" class="btn btn-warning btn-sm">Restart</button>
-				
-				<p> <p ng-show="deviation<0" class="alert alert-warning">Your guess is higher.</p>
-				<p ng-show="deviation>0" class="alert alert-warning">Your guess is lower.</p>
-				<p ng-show="deviation===0" class="alert alert-success">Yes! That"s it.</p>
+					<p></p>
+					<label>Your Guess: </label><input type="number" ng-model="guess"/>
+					<button ng-click="verifyGuess()" class="btn btn-primarybtn-sm">Verify</button>
+					<button ng-click="initializeGame()" class="btn btn-warning btn-sm">Restart</button>
+					
+					<p ng-show="deviation<0" class="alert alert-warning">Your guess is higher.</p>
+					<p ng-show="deviation>0" class="alert alert-warning">Your guess is lower.</p>
+					<p ng-show="deviation===0" class="alert alert-success">Yes! That"s it.</p>
 			
 				<p class="text-info">No of guesses : <span class="badge">{{noOfTries}}</span><p>
 		</div>
@@ -36,7 +36,7 @@
 				}
 				
 				$scope.initializeGame = function () {
-				Settings	//$scope.num = 0;
+				  //$scope.num = 0;
 					$scope.noOfTries = 0;
 					$scope.original = Math.floor((Math.random() * $scope.num) + 1);
 					$scope.guess = null;
