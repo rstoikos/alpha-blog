@@ -23,6 +23,11 @@ $navbar-default-bg: black;
   text-align: center;
 }
 
+.listing {
+	list-style: none;
+	padding-left: 0;
+}
+
 .jumbotron {
   background-image: asset-url('tux1.jpg');
   background-size:cover;
