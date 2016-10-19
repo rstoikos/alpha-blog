@@ -47,7 +47,7 @@ class UsersController < ApplicationController
 		redirect_to users_path
 	end
 		
-	end
+	
 	
 	def set_user
 		@user = User.find(params[:id])
