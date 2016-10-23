@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   root 'pages#home'
   get 'about', to: 'pages#about'
   get 'game', to: 'pages#game'
+  get 'snmp', to: 'pages#snmp'
   resources :articles
   
   get 'signup', to: 'users#new'
